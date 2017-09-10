@@ -1,0 +1,170 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.85,top=1.5cm]{geometry} % Reduce document margins
+\nopagenumbers
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Shubham} % Your first name
+\familyname{Thakur} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{}{Navi Mumbai}
+\mobile{\textbf{(+91) 9920416622}}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{sbmthakur@gmail.com}
+\github{github.com/sbmthakur} % Introduce links to github and linkedin 
+\linkedin{linkedin.com/in/shubham-thakur}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+%\quote{Seeking a Job Opportunity or a PhD Placement by the 10th of September - 23 years old}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+\vspace*{-0.7cm} % Decrease the space between title and succeeding section by 0.7cm
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2012--2016}{B.E. in Information Technology, University of Mumbai}{}{}{}{GPA: 7.3}  % Arguments not required can be left empty
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\cventry{June 2016 - Present\\\textbf{Reliance Jio}\\Navi Mumbai}{JioTV}{Back-end Developer and DevOps Engineer}{}{}{JioTV allows you to watch Live TV channels and past 7 days programs on any device, any time. \\
+\begin{itemize}
+ \item Developed several APIs which were consumed by Android, IOS and Feature phone clients.
+ \item Developed monitoring and logging stack, which helped in debugging and optimizing various back-end components. 
+ \item Scaled Back-end to handle more than 55 million devices with \textbf{2.3 million concurrent users}. 
+ \item Managed Network and Server configurations.\\
+\end{itemize}
+}
+
+\cventry{}{Numos}{Full Stack Developer}{}{}{Numos provides you with latest news updates from across the world.  \\
+\begin{itemize}
+ \item Developed APIs for the Android client. 
+ \item Developed Front-end and Back-end for Content Management System, which is used for uploading and editing news items.
+\end{itemize}
+}
+
+
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\cventry{June 2017 - Present}{define}{}{}{}{Fetch a word's meaning and usage through \textbf{Oxford Dictionaries API}. Considering the limit on number of requests per month, the word data is stored in Redis. Future queries for the same word are served through Redis.\\}
+\cventry{June 2017 - Present}{wordpop}{}{}{}{Show a word and its meaning as a notification on a Ubuntu machine. It uses the \textbf{notify-send} program to communicate with the notification daemon. \\}
+\cventry{May 2017}{markdown-editor}{}{}{}{Create realtime notes in markdown straight away in your browser, no server required. It uses the \textbf{showdownjs} library to convert Markdown to HTML. \\}
+\cventry{June 2015 - April 2016}{L.I.E.}{}{}{}{Lie Interrogator Expert is a Web based service which allows lie detection as a service. The software part of the project was developed using \textbf{LAMP} stack. The hardware part of the project uses Audio, GSR, Pulse and Breadth sensors.\\}
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Languages}
+%\begin{small}
+%\cvitemwithcomment{Arabic}{Native Speaker}{}
+%\cvitemwithcomment{French}{Near Native}{excellent command}
+%\cvitemwithcomment{English}{Near Native}{excellent command}
+%\cvitemwithcomment{Chinese}{Intermediate}{good working knowledge}
+%\cvitemwithcomment{Japanese}{Intermediate}{good working knowledge}
+%\end{small}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+%\bigskip
+
+%\section{Interests}
+%
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+%
+%\cvlistdoubleitem{Trecking}{Robotics (NAO Junior Developer)}
+%\cvlistdoubleitem{Robotics}{}
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS
+%----------------------------------------------------------------------------------------
+
+\section{Technical Strengths}
+
+\cvitem{Languages}{Javascript, Python, Bash}
+\cvitem{APIs}{\textsc{JSON, REST}}
+\cvitem{Databases}{Redis, Couchbase, Elasticsearch, MySQL}
+\cvitem{Tools}{Vim, Git, Nginx, Linux}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
